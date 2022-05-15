@@ -7,11 +7,11 @@ Begin by installing this package through Composer. Just run following command to
 ```shell script
 composer require codecamplao/telbiz
 ```
-For Laravel use this-
+You can also edit your project's `composer.json` file to require `codecamplao/telbiz`.
 
 ```json
 "require": {
-    "codecamplao/telbiz": "1.0"
+    "codecamplao/telbiz": "^1.0.00"
 }
 ```
 Next, update Composer from the Terminal:
@@ -27,6 +27,23 @@ Once this operation completes, the final step is to add the service provider. Op
     // ...
     CodeCampLAO\TelBiz\TelBizServiceProvider::class,
 ]
+```
+
+Next, Add more config on environment file. Open `.env`, and add a new three config like below.
+
+```dotenv
+TELBIZ_BASE_URI=""
+TELBIZ_CLIENT_ID=""
+TELBIZ_CLIENT_SECRET=""
+```
+
+## Example to use
+```php
+protected $telbiz_sms;
+public function __construct()
+{
+    $this->telbiz_sms = new TelBizSMS();
+}
 ```
 
 
