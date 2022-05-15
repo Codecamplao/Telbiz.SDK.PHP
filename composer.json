@@ -1,0 +1,37 @@
+{
+    "name": "codecamplao/telbiz",
+    "description": "Services about Telecom",
+    "keywords": [
+        "Telbiz",
+        "laravel"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khamphai KHOUNNAVONGSA",
+            "email": "pphai67@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeCampLAO\\TelBiz\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CodeCampLAO\\TelBiz\\TelBizServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
