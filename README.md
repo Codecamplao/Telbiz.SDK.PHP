@@ -11,7 +11,7 @@ You can also edit your project's `composer.json` file to require `codecamplao/te
 
 ```json
 "require": {
-    "codecamplao/telbiz": "^1.0.00"
+    "codecamplao/telbiz": "^1.0"
 }
 ```
 Next, update Composer from the Terminal:
