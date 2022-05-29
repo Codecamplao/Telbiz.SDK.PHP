@@ -2,6 +2,7 @@
 
 namespace CodeCampLAO\TelBiz\Helpers;
 
+use CodeCampLAO\TelBiz\Enums\TitleEnum;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 
