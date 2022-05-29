@@ -44,6 +44,27 @@ public function __construct()
 {
     $this->telbiz_sms = new TelBizSMS();
 }
+
+public function index(): Response
+{
+    return $this->telbiz_sms->sendSmsService(TitleEnum::Default, '2099490807', 'Hello From Telbiz');
+}
+```
+
+Example response:
+```json
+{
+    "response": {
+        "code": "SUCCESS_OPERATION",
+        "message": "Success",
+        "success": true,
+        "detail": "Success"
+    },
+    "key": {
+        "partitionKey": "16512253832870000",
+        "rangeKey": "16538405678928228"
+    }
+}
 ```
 
 
