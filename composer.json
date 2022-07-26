@@ -3,7 +3,7 @@
     "description": "Services about Telecom",
     "keywords": [
         "Telbiz",
-        "laravel"
+        "Laravel"
     ],
     "type": "library",
     "license": "MIT",
