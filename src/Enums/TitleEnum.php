@@ -4,7 +4,7 @@ namespace CodeCampLAO\TelBiz\Enums;
 
 final class TitleEnum
 {
-    const Default = "Default";
+    const Default = "Telbiz";
     const News = "News";
     const Promotion = "Promotion";
     const OTP = "OTP";

@@ -1,4 +1,4 @@
-# TelBiz-Pkg
+# Telbiz.SDK.PHP
 
 ## Installation
 
@@ -47,7 +47,7 @@ public function __construct()
 
 public function index(): Response
 {
-    return $this->telbiz_sms->sendSmsService(TitleEnum::Default, '2099490807', 'Hello From Telbiz');
+    return $this->telbiz_sms->sendSmsService(TitleEnum::Default, '20xxxxxxxx', 'Hello Telbiz');
 }
 ```
 
